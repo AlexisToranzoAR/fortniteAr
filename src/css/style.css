@@ -1,0 +1,126 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1e272e;
+}
+
+.bg-midnight {
+  background-color: #1e272e;
+}
+
+.navbar {
+  box-shadow: 2px 2px 5px #000;
+  opacity: .9;
+}
+
+.display-4 {
+  font-size: 3rem;
+}
+
+.main-header {
+  background: url(../img/llama-background.jpg);
+  background-size: cover;
+}
+
+.main-header .font-italic {
+  font-size: 1.1rem;
+}
+
+.main-header i {
+  color: #f1c40f;
+  font-size: 1.5rem;
+}
+
+.main-header a {
+  color: #EE5A24;
+}
+.news .card, #load-more-news {
+  background-color: #222f3e;
+  box-shadow: 2px 2px 4px #000;
+  opacity: .9;
+}
+.news .card i {
+  color: #fff;
+}
+.text-grey {
+  color: #b2bec3;
+}
+
+
+
+.fortnite-item {
+  border-width: 4px;
+	border-style: solid;
+	border-image-slice: 20;
+	padding: 0;
+	position: relative;
+	grid-column: span 2;
+	display: block;
+}
+.fortnite-item-image {
+  width: 100%;
+	display: block;
+}
+.fortnite-item-details {
+  position: absolute;
+	left: 0px;
+	bottom: 0px;
+	font-size: 1rem;
+	width: 100%;
+}
+.fortnite-item-name{
+  background: rgba(0, 7, 36, 0.5);
+	line-height: 1;
+	text-align: center;
+	font-size: 1rem;
+	color: white;
+}
+.fortnite-item-price {
+  font-weight: bold;
+  font-size: 0.7rem;
+  line-height: 1;
+	background-color: #000724;
+	width: 100%;
+	padding: .3rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+.fortnite-item-price img {
+  width: 1.1rem;
+	padding-right: .3rem;
+}
+.fortnite-item-legendary {
+  border-image-source: linear-gradient(25deg, #df7241 15%, #F6C87C);
+	background-image: radial-gradient(#fb9625 0%, #875134 100%);
+}
+.fortnite-item-epic {
+  border-image-source: linear-gradient(25deg, #8037D7 15%, #DF2CEF);
+	background-image: radial-gradient(#d27bf4 0%, #7907a5 100%);
+}
+.fortnite-item-rare {
+  border-image-source: linear-gradient(25deg, #0063C5 15%, #00EFEC);
+	background-image: radial-gradient(#3dc7ff 0%, #0059a1 100%);
+}
+.fortnite-item-uncommon {
+  border-image-source: linear-gradient(25deg, #008A09 15%, #9EEF00);
+	background-image: radial-gradient(#5BAD03 0%, #01700a 100%);
+}
+.fortnite-item-common {
+  border-image-source: linear-gradient(25deg, #7E848A 15%, #CFCFCF);
+	background-image: radial-gradient(#d0d0d0 0%, #6d7071 100%);
+}
+.fortnite-item-marvel {
+  border-image-source: linear-gradient(25deg, #c53334 15%, #761b1b);
+	background-image: radial-gradient(#c53334 0%, #761b1b 100%);
+}
+.fortnite-store {
+	display: -ms-grid;
+	display: grid;
+	grid-gap: .4rem;
+	-ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(6, 1fr);
+}

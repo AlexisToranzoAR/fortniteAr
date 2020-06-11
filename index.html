@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <title>FortniteAR</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-midnight">
+    <div class="container">
+      <a class="navbar-brand" href="#">FortniteAR</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Menu
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://github.com/alexistoranzoar/pokedex" target="_blank">GitHub</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://fortniteapi.io/" target="_blank">FortniteAPI</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="main-header py-5">
+    <div class="background-overlay text-white pb-3 container text-center">
+      <h1 class="display-4">Busque sus estadisticas</h1>
+    </div>
+    <form class="form-inline justify-content-center">
+      <input class="form-control mr-sm-2" type="search" placeholder="Ingrese su ID" style="width: 370px">
+      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
+    <p class="text-white text-center pt-3 font-italic">Puede buscar por su <a href="#">Alias</a>, <a href="#">PSN</a> o <a href="">ID de cuenta</a></p>
+    <div class="d-flex flex-row justify-content-center pt-2">
+      <div class="px-4">
+        <a href="https://www.epicgames.com/fortnite/es-MX/home?lang=es-MX" target="_blank"><i class="fas fa-globe-americas"></i></a>
+      </div>
+      <div class="px-4">
+        <a href="https://twitter.com/Fortnite_ES" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="px-4">
+        <a href="https://www.instagram.com/fortnitees/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="mt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <div class="news">
+            <h3 class="font-weight-bold text-uppercase text-grey">Últimas noticias</h3>
+            <div class="card text-white my-3" id="news-1">
+              <div class="row">
+                <div class="col-md-4 my-auto">
+                  <img src="src/img/test-image.jpg" class="img-fluid rounded mx-auto d-block" loading="lazy">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-block p-3">
+                    <h4 class="font-weight-bold">Titulo Noticia 1</h4>
+                    <div class="collapse-content">
+                      <p class="card-text collapse" id="collapse-news-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita pariatur ad odio. Dicta, eum aliquam molestiae iure consequatur velit sapiente enim tempora debitis dolores,
+                        ipsa. Nostrum quo incidunt consectetur sed.</p>
+                      <p class="text-muted inline">por <span class="author">Alexis Toranzo</span>, <span class="date">10/06/2020</span></p>
+                      <a class="btn btn-outline-warning collapsed" data-toggle="collapse" href="#collapse-news-1" aria-expanded="false" aria-controls="collapseContent">Leer Más</a>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="reddit-link"><i class="fab fa-reddit-alien float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="facebook-link"><i class="fab fa-facebook-f float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="twitter-link"><i class="fab fa-twitter float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card text-white my-3" id="news-2">
+              <div class="row">
+                <div class="col-md-4 my-auto">
+                  <img src="src/img/test-image.jpg" class="img-fluid rounded mx-auto d-block" loading="lazy">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-block p-3">
+                    <h4 class="font-weight-bold">Titulo Noticia 2</h4>
+                    <div class="collapse-content">
+                      <p class="card-text collapse" id="collapse-news-2">Descripcion de la noticia</p>
+                      <p class="text-muted inline">por <span class="author">Alexis Toranzo</span>, <span class="date">10/06/2020</span></p>
+                      <a class="btn btn-outline-warning collapsed" data-toggle="collapse" href="#collapse-news-2" aria-expanded="false" aria-controls="collapseContent">Leer Más</a>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="reddit-link"><i class="fab fa-reddit-alien float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="facebook-link"><i class="fab fa-facebook-f float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="twitter-link"><i class="fab fa-twitter float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card text-white my-3" id="news-3">
+              <div class="row">
+                <div class="col-md-4 my-auto">
+                  <img src="src/img/test-image.jpg" class="img-fluid rounded mx-auto d-block" loading="lazy">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-block p-3">
+                    <h4 class="font-weight-bold">Titulo Noticia 3</h4>
+                    <div class="collapse-content">
+                      <p class="card-text collapse" id="collapse-news-3">Descripcion de la noticia</p>
+                      <p class="text-muted inline">por <span class="author">Alexis Toranzo</span>, <span class="date">10/06/2020</span></p>
+                      <a class="btn btn-outline-warning collapsed" data-toggle="collapse" href="#collapse-news-3" aria-expanded="false" aria-controls="collapseContent">Leer Más</a>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="reddit-link"><i class="fab fa-reddit-alien float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="facebook-link"><i class="fab fa-facebook-f float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="twitter-link"><i class="fab fa-twitter float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card text-white my-3" id="news-4">
+              <div class="row">
+                <div class="col-md-4 my-auto">
+                  <img src="src/img/test-image.jpg" class="img-fluid rounded mx-auto d-block" loading="lazy">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-block p-3">
+                    <h4 class="font-weight-bold">Titulo Noticia 4</h4>
+                    <div class="collapse-content">
+                      <p class="card-text collapse" id="collapse-news-4">Descripcion de la noticia</p>
+                      <p class="text-muted inline">por <span class="author">Alexis Toranzo</span>, <span class="date">10/06/2020</span></p>
+                      <a class="btn btn-outline-warning collapsed" data-toggle="collapse" href="#collapse-news-4" aria-expanded="false" aria-controls="collapseContent">Leer Más</a>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="reddit-link"><i class="fab fa-reddit-alien float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="facebook-link"><i class="fab fa-facebook-f float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="twitter-link"><i class="fab fa-twitter float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card text-white my-3" id="news-5">
+              <div class="row">
+                <div class="col-md-4 my-auto">
+                  <img src="src/img/test-image.jpg" class="img-fluid rounded mx-auto d-block" loading="lazy">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-block p-3">
+                    <h4 class="font-weight-bold">Titulo Noticia 5</h4>
+                    <div class="collapse-content">
+                      <p class="card-text collapse" id="collapse-news-5">Descripcion de la noticia</p>
+                      <p class="text-muted inline">por <span class="author">Alexis Toranzo</span>, <span class="date">10/06/2020</span></p>
+                      <a class="btn btn-outline-warning collapsed" data-toggle="collapse" href="#collapse-news-5" aria-expanded="false" aria-controls="collapseContent">Leer Más</a>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="reddit-link"><i class="fab fa-reddit-alien float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="facebook-link"><i class="fab fa-facebook-f float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="twitter-link"><i class="fab fa-twitter float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card text-white my-3" id="news-6">
+              <div class="row">
+                <div class="col-md-4 my-auto">
+                  <img src="src/img/test-image.jpg" class="img-fluid rounded mx-auto d-block" loading="lazy">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-block p-3">
+                    <h4 class="font-weight-bold">Titulo Noticia 6</h4>
+                    <div class="collapse-content">
+                      <p class="card-text collapse" id="collapse-news-6">Descripcion de la noticia</p>
+                      <p class="text-muted inline">por <span class="author">Alexis Toranzo</span>, <span class="date">10/06/2020</span></p>
+                      <a class="btn btn-outline-warning collapsed" data-toggle="collapse" href="#collapse-news-6" aria-expanded="false" aria-controls="collapseContent">Leer Más</a>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="reddit-link"><i class="fab fa-reddit-alien float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="facebook-link"><i class="fab fa-facebook-f float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="twitter-link"><i class="fab fa-twitter float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card text-white my-3" id="news-7">
+              <div class="row">
+                <div class="col-md-4 my-auto">
+                  <img src="src/img/test-image.jpg" class="img-fluid rounded mx-auto d-block" loading="lazy">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-block p-3">
+                    <h4 class="font-weight-bold">Titulo Noticia 7</h4>
+                    <div class="collapse-content">
+                      <p class="card-text collapse" id="collapse-news-7">Descripcion de la noticia</p>
+                      <p class="text-muted inline">por <span class="author">Alexis Toranzo</span>, <span class="date">10/06/2020</span></p>
+                      <a class="btn btn-outline-warning collapsed" data-toggle="collapse" href="#collapse-news-7" aria-expanded="false" aria-controls="collapseContent">Leer Más</a>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="reddit-link"><i class="fab fa-reddit-alien float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="facebook-link"><i class="fab fa-facebook-f float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="twitter-link"><i class="fab fa-twitter float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card text-white my-3" id="news-8">
+              <div class="row">
+                <div class="col-md-4 my-auto">
+                  <img src="src/img/test-image.jpg" class="img-fluid rounded mx-auto d-block" loading="lazy">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-block p-3">
+                    <h4 class="font-weight-bold">Titulo Noticia 8</h4>
+                    <div class="collapse-content">
+                      <p class="card-text collapse" id="collapse-news-8">Descripcion de la noticia</p>
+                      <p class="text-muted inline">por <span class="author">Alexis Toranzo</span>, <span class="date">10/06/2020</span></p>
+                      <a class="btn btn-outline-warning collapsed" data-toggle="collapse" href="#collapse-news-8" aria-expanded="false" aria-controls="collapseContent">Leer Más</a>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="reddit-link"><i class="fab fa-reddit-alien float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="facebook-link"><i class="fab fa-facebook-f float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="twitter-link"><i class="fab fa-twitter float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card text-white my-3" id="news-9">
+              <div class="row">
+                <div class="col-md-4 my-auto">
+                  <img src="src/img/test-image.jpg" class="img-fluid rounded mx-auto d-block" loading="lazy">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-block p-3">
+                    <h4 class="font-weight-bold">Titulo Noticia 9</h4>
+                    <div class="collapse-content">
+                      <p class="card-text collapse" id="collapse-news-9">Descripcion de la noticia</p>
+                      <p class="text-muted inline">por <span class="author">Alexis Toranzo</span>, <span class="date">10/06/2020</span></p>
+                      <a class="btn btn-outline-warning collapsed" data-toggle="collapse" href="#collapse-news-9" aria-expanded="false" aria-controls="collapseContent">Leer Más</a>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="reddit-link"><i class="fab fa-reddit-alien float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="facebook-link"><i class="fab fa-facebook-f float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="twitter-link"><i class="fab fa-twitter float-right p-1 my-2 mx-3"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card text-white my-3" id="news-10">
+              <div class="row">
+                <div class="col-md-4 my-auto">
+                  <img src="src/img/test-image.jpg" class="img-fluid rounded mx-auto d-block" loading="lazy">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-block p-3">
+                    <h4 class="font-weight-bold">Titulo Noticia 10</h4>
+                    <div class="collapse-content">
+                      <p class="card-text collapse" id="collapse-news-10">Descripcion de la noticia</p>
+                      <p class="text-muted inline">por <span class="author">Alexis Toranzo</span>, <span class="date">10/06/2020</span></p>
+                      <a class="btn btn-outline-warning collapsed" data-toggle="collapse" href="#collapse-news-10" aria-expanded="false" aria-controls="collapseContent">Leer Más</a>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="reddit-link"><i class="fab fa-reddit-alien float-right p-1 my-2 mx-3 align-self-center"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="facebook-link"><i class="fab fa-facebook-f float-right p-1 my-2 mx-3 align-self-center"></i></a>
+                      </div>
+                      <div class="d-inline px-3">
+                        <a href="" target="_blank" class="twitter-link"><i class="fab fa-twitter float-right p-1 my-2 mx-3 align-self-center"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card my-3" id="load-more-news">
+            <button type="button" name="button" class="btn btn-outline-warning d-block">Cargar Más Contenido</button>
+          </div>
+
+          <h4 class="font-weight-bold text-uppercase mt-4 text-grey">Acerca de FortniteAR</h4>
+          <p class="text-grey">Bienvenido/a a FortniteAr. Encuentre estadisticas, noticias, items de la tienda y mucho más de Fortnite Battle Royal. También puede ver las misiones disponibles de Fortnite Salvar el Mundo y su tienda. Esta pagina web ha sido creada por <a href="https://www.github.com/alexistoranzoar" target="_blank">Alexis Toranzo</a></p>
+        </div>
+        <div class="col-4 store">
+          <div class="daily-items mb-3">
+            <h3 class="font-weight-bold text-uppercase mb-3 text-grey">Items Diarios</h3>
+            <div class="fortnite-store fortnite-store-daily">
+              <a href="#" class="fortnite-item fortnite-item-marvel" id="daily-item-1" title="Skin Fortnite">
+                <img class="fortnite-item-image" src="src/img/skin-test.png" alt="" loading="lazy">
+                <div class="fortnite-item-details">
+                  <div class="fortnite-item-name">Alexis Toranzo</div>
+                  <div class="fortnite-item-price">
+                    <img src="src/img/vbucks.png" alt="" loading="lazy">
+                    <span>1,500</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="fortnite-item fortnite-item-legendary" id="daily-item-2" title="Skin Fortnite">
+                <img class="fortnite-item-image" src="src/img/skin-test.png" alt="" loading="lazy">
+                <div class="fortnite-item-details">
+                  <div class="fortnite-item-name">Alexis Toranzo</div>
+                  <div class="fortnite-item-price">
+                    <img src="src/img/vbucks.png" alt="" loading="lazy">
+                    <span>1,500</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="fortnite-item fortnite-item-epic" id="daily-item-3" title="Skin Fortnite">
+                <img class="fortnite-item-image" src="src/img/skin-test.png" alt="" loading="lazy">
+                <div class="fortnite-item-details">
+                  <div class="fortnite-item-name">Alexis Toranzo</div>
+                  <div class="fortnite-item-price">
+                    <img src="src/img/vbucks.png" alt="" loading="lazy">
+                    <span>1,500</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="fortnite-item fortnite-item-rare" id="daily-item-4" title="Skin Fortnite">
+                <img class="fortnite-item-image" src="src/img/skin-test.png" alt="" loading="lazy">
+                <div class="fortnite-item-details">
+                  <div class="fortnite-item-name">Alexis Toranzo</div>
+                  <div class="fortnite-item-price">
+                    <img src="src/img/vbucks.png" alt="" loading="lazy">
+                    <span>1,500</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="fortnite-item fortnite-item-uncommon" id="daily-item-5" title="Skin Fortnite">
+                <img class="fortnite-item-image" src="src/img/skin-test.png" alt="" loading="lazy">
+                <div class="fortnite-item-details">
+                  <div class="fortnite-item-name">Alexis Toranzo</div>
+                  <div class="fortnite-item-price">
+                    <img src="src/img/vbucks.png" alt="" loading="lazy">
+                    <span>1,500</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="fortnite-item fortnite-item-common" id="daily-item-6" title="Skin Fortnite">
+                <img class="fortnite-item-image" src="src/img/skin-test.png" alt="" loading="lazy">
+                <div class="fortnite-item-details">
+                  <div class="fortnite-item-name">Alexis Toranzo</div>
+                  <div class="fortnite-item-price">
+                    <img src="src/img/vbucks.png" alt="" loading="lazy">
+                    <span>1,500</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="featured-items mb-3">
+            <h3 class="font-weight-bold text-uppercase mb-3 text-grey">Items Destacados</h3>
+            <div class="fortnite-store fortnite-store-featured">
+              <a href="#" class="fortnite-item fortnite-item-marvel" id="featured-item-1" title="Skin">
+                <img class="fortnite-item-image" src="src/img/skin-test.png" alt="" loading="lazy">
+                <div class="fortnite-item-details">
+                  <div class="fortnite-item-name">Alexis Toranzo</div>
+                  <div class="fortnite-item-price">
+                    <img src="src/img/vbucks.png" alt="" loading="lazy">
+                    <span>1,500</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="fortnite-item fortnite-item-legendary" id="featured-item-2" title="Skin Fortnite">
+                <img class="fortnite-item-image" src="src/img/skin-test.png" alt="" loading="lazy">
+                <div class="fortnite-item-details">
+                  <div class="fortnite-item-name">Alexis Toranzo</div>
+                  <div class="fortnite-item-price">
+                    <img src="src/img/vbucks.png" alt="" loading="lazy">
+                    <span>1,500</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="fortnite-item fortnite-item-epic" id="featured-item-3" title="Skin Fortnite">
+                <img class="fortnite-item-image" src="src/img/skin-test.png" alt="" loading="lazy">
+                <div class="fortnite-item-details">
+                  <div class="fortnite-item-name">Alexis Toranzo</div>
+                  <div class="fortnite-item-price">
+                    <img src="src/img/vbucks.png" alt="" loading="lazy">
+                    <span>1,500</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="fortnite-item fortnite-item-rare" id="featured-item-4" title="Skin Fortnite">
+                <img class="fortnite-item-image" src="src/img/skin-test.png" alt="" loading="lazy">
+                <div class="fortnite-item-details">
+                  <div class="fortnite-item-name">Alexis Toranzo</div>
+                  <div class="fortnite-item-price">
+                    <img src="src/img/vbucks.png" alt="" loading="lazy">
+                    <span>1,500</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="fortnite-item fortnite-item-uncommon" id="featured-item-5" title="Skin Fortnite">
+                <img class="fortnite-item-image" src="src/img/skin-test.png" alt="" loading="lazy">
+                <div class="fortnite-item-details">
+                  <div class="fortnite-item-name">Alexis Toranzo</div>
+                  <div class="fortnite-item-price">
+                    <img src="src/img/vbucks.png" alt="" loading="lazy">
+                    <span>1,500</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="fortnite-item fortnite-item-common" id="featured-item-6" title="Skin Fortnite">
+                <img class="fortnite-item-image" src="src/img/skin-test.png" alt="" loading="lazy">
+                <div class="fortnite-item-details">
+                  <div class="fortnite-item-name">Alexis Toranzo</div>
+                  <div class="fortnite-item-price">
+                    <img src="src/img/vbucks.png" alt="" loading="lazy">
+                    <span>1,500</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="fortnite-item fortnite-item-marvel" id="featured-item-7" title="Skin">
+                <img class="fortnite-item-image" src="src/img/skin-test.png" alt="" loading="lazy">
+                <div class="fortnite-item-details">
+                  <div class="fortnite-item-name">Alexis Toranzo</div>
+                  <div class="fortnite-item-price">
+                    <img src="src/img/vbucks.png" alt="" loading="lazy">
+                    <span>1,500</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="fortnite-item fortnite-item-legendary" id="featured-item-8" title="Skin Fortnite">
+                <img class="fortnite-item-image" src="src/img/skin-test.png" alt="" loading="lazy">
+                <div class="fortnite-item-details">
+                  <div class="fortnite-item-name">Alexis Toranzo</div>
+                  <div class="fortnite-item-price">
+                    <img src="src/img/vbucks.png" alt="" loading="lazy">
+                    <span>1,500</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="fortnite-item fortnite-item-epic" id="featured-item-9" title="Skin Fortnite">
+                <img class="fortnite-item-image" src="src/img/skin-test.png" alt="" loading="lazy">
+                <div class="fortnite-item-details">
+                  <div class="fortnite-item-name">Alexis Toranzo</div>
+                  <div class="fortnite-item-price">
+                    <img src="src/img/vbucks.png" alt="" loading="lazy">
+                    <span>1,500</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="fortnite-item fortnite-item-rare" id="featured-item-10" title="Skin Fortnite">
+                <img class="fortnite-item-image" src="src/img/skin-test.png" alt="" loading="lazy">
+                <div class="fortnite-item-details">
+                  <div class="fortnite-item-name">Alexis Toranzo</div>
+                  <div class="fortnite-item-price">
+                    <img src="src/img/vbucks.png" alt="" loading="lazy">
+                    <span>1,500</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="fortnite-item fortnite-item-uncommon" id="featured-item-11" title="Skin Fortnite">
+                <img class="fortnite-item-image" src="src/img/skin-test.png" alt="" loading="lazy">
+                <div class="fortnite-item-details">
+                  <div class="fortnite-item-name">Alexis Toranzo</div>
+                  <div class="fortnite-item-price">
+                    <img src="src/img/vbucks.png" alt="" loading="lazy">
+                    <span>1,500</span>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="fortnite-item fortnite-item-common" id="featured-item-12" title="Skin Fortnite">
+                <img class="fortnite-item-image" src="src/img/skin-test.png" alt="" loading="lazy">
+                <div class="fortnite-item-details">
+                  <div class="fortnite-item-name">Alexis Toranzo</div>
+                  <div class="fortnite-item-price">
+                    <img src="src/img/vbucks.png" alt="" loading="lazy">
+                    <span>1,500</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+      <div class="container p-3">
+        <div class="row text-center text-white">
+          <div class="col ml-auto">
+            <p class="text-grey">Copyright &copy; 2020 - Todos los derechos reservados</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="src/main.js" type="module"></script>
+</body>
+
+</html>
