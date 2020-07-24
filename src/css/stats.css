@@ -1,0 +1,144 @@
+.fta-picker-item-icon {
+    height: 23px;
+    display: inline-block;
+    fill: #FFFFFF
+}
+
+.fta-defstat__name {
+    font-size: 1rem;
+    color: #9A9A9A;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.fta-defstat__values {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.fta-defstat__value {
+    font-size: 1.5rem
+}
+
+.fta-percentilebar {
+    border-radius: 2px;
+    width: 100%;
+    height: .4rem;
+    overflow: hidden;
+    background: #363636;
+    margin: .4rem 0
+}
+
+.fta-percentilebar__fill {
+    height: 100%;
+    background: #1F1F1F;
+    border-radius: 2px
+}
+
+.fta-card {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    background: #292929;
+    margin-bottom: 2.4rem;
+    display: block
+}
+
+.fta-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #B2B2B2;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.fta-card__header-subline {
+    font-size: 1rem;
+    color: #E5E5E5;
+    background: #727272;
+    padding: .6rem;
+    position: relative;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.fta-card__header-subline::before {
+    content: '';
+    width: 40px;
+    height: 100%;
+    display: block;
+    background: inherit;
+    position: absolute;
+    left: -39px;
+    top: 0;
+    clip-path: polygon(100% 0%, 100% 100%, 54% 40%, 56% 67.5%, 0% 0%);
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 54% 40%, 56% 67.5%, 0% 0%)
+}
+
+.fta-card__header-title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: .6rem;
+    margin: 0;
+    color: #000000
+}
+
+.fta-card__content {
+    padding: 0.8rem;
+}
+
+.fta-card.fta-card-blue .fta-card__header {
+    background: #17C2FE
+}
+
+.fta-card.fta-card-blue .fta-card__header-title {
+    color: #034A63
+}
+
+.fta-card.fta-card-blue .fta-card__header-subline {
+    background: #0682B1;
+    color: #fff
+}
+
+.fta-card.fta-card-blue .fta-percentilebar__fill {
+    background: #17C2FE
+}
+
+.fta-card.fta-card-green .fta-card__header {
+    background: #5CFC7B
+}
+
+.fta-card.fta-card-green .fta-card__header-title {
+    color: #21592C
+}
+
+.fta-card.fta-card-green .fta-card__header-subline {
+    background: #41B057;
+    color: #fff
+}
+
+.fta-card.fta-card-green .fta-percentilebar__fill {
+    background: #5CFC7B
+}
+
+.fta-card.fta-card-purple .fta-card__header {
+    background: #C272D9
+}
+
+.fta-card.fta-card-purple .fta-card__header-title {
+    color: #45294D
+}
+
+.fta-card.fta-card-purple .fta-card__header-subline {
+    background: #9042A6
+}
+
+.fta-card.fta-card-purple .fta-percentilebar__fill {
+    background: #C272D9
+}

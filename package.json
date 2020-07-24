@@ -5,22 +5,16 @@
   "main": "./src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "http-server -c-1"
+    "start": "run-p dev serve",
+    "dev": "nodemon index.js",
+    "serve": "http-server -c-1 -p8000"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlexisToranzoAR/fortniteAr.git"
   },
   "keywords": [
-    "fortnite",
-    "save",
-    "the",
-    "world",
-    "information",
-    "informacion",
-    "salvar",
-    "el",
-    "mundo"
+    "fortnite"
   ],
   "author": "Alexis Toranzo",
   "license": "GPL-3.0-only",
@@ -29,13 +23,19 @@
   },
   "homepage": "https://github.com/AlexisToranzoAR/fortniteAr#readme",
   "devDependencies": {
+    "@types/jquery": "^3.5.0",
     "cypress": "^4.7.0",
+    "http-server": "^0.12.3",
+    "nodemon": "^2.0.4",
     "npm-run-all": "^4.1.5"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@popperjs/core": "^2.4.0",
     "bootstrap": "^4.5.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fortnite-api-io": "^1.5.1",
     "jquery": "^3.5.1",
     "scrollreveal": "^4.0.6"
   }
